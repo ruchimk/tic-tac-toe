@@ -1,0 +1,111 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+header {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: #c0adf0;
+}
+
+/* General */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container {
+  width: 390px;
+  margin: 0 auto;
+  text-align: center;
+  color: #0000cd;
+}
+
+/* Header */
+header h1 {
+  font-family: 'Shadows Into Light', bold, cursive;
+  font-size: 50px;
+  padding: 10px;
+}
+
+/* Message */
+.message {
+  padding: 10px;
+  font-size: 18px;
+  font-family: 'Shadows Into Light', bold, cursive;
+}
+.end-message {
+  font-size: 22px;
+  font-family: 'Shadows Into Light', bold, cursive;
+  color:#0000cd;
+}
+.play-again {
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 22px;
+  font-family: 'Shadows Into Light', bold, cursive;
+  border: 1px solid #0000cd;
+  color: #0000cd;
+  background-color: #a1d3b0;
+  background: -webkit-linear-gradient(#a1d3b0, #66CDAA);
+  background:    -moz-linear-gradient(#a1d3b0, #66CDAA);
+  background:         linear-gradient(#a1d3b0, #66CDAA);
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  display: none;
+}
+.play-again:hover {
+  background-color: #66CDAA;
+  background: -webkit-linear-gradient(#66CDAA, #a1d3b0);
+  background:    -moz-linear-gradient(#66CDAA, #a1d3b0);
+  background:         linear-gradient(#66CDAA, #a1d3b0);
+}
+
+/* Gameboard */
+.gameboard {
+  overflow: hidden;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.gameboard div {
+  background-color: #ffc0cb;
+  width: 130px;
+  height: 130px;
+  float: left;
+  font-size: 50px;
+  font-family: 'Shadows Into Light', bold, cursive;
+  line-height: 130px;
+}
+.r-border {
+  border-right: 1px solid #0000cd;
+}
+.b-border {
+  border-bottom: 1px solid #0000cd;
+}
+.winning-square {
+  color:#66CDAA;
+}
